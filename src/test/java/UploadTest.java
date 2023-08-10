@@ -14,7 +14,6 @@ public class UploadTest extends Workflows {
     }
     @AfterTest
             public void closeSession() throws InterruptedException {
-        Thread.sleep(4000);
         driver.quit();
     }
 }
