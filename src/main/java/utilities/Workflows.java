@@ -9,7 +9,6 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.testng.Assert;
-
 import java.time.Duration;
 import java.util.concurrent.TimeUnit;
 
@@ -47,6 +46,6 @@ public class Workflows extends CommonOps {
 
     public void openFile() {
         clickOnELement("//a[@id='back']");
-//click to play music
+        Assert.assertTrue(driver.findElement(By.id("player")).isDisplayed(), "file is not visible");
     }
 }
