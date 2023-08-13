@@ -13,7 +13,7 @@ public class UploadTest extends Workflows {
         openFile();
     }
     @AfterTest
-            public void closeSession() throws InterruptedException {
+            public void closeSession() {
         driver.quit();
     }
 }
